@@ -15,7 +15,7 @@ import { HomeComponent } from './Component/HomeComponent';
                     HttpModule
                   ],
     declarations: [ AppComponent, HomeComponent ],
-    bootstrap:    [ AppComponent ]
+    bootstrap:    [ AppComponent, HomeComponent ]
 
 })
 export class AppModule { }

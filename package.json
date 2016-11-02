@@ -1,8 +1,8 @@
 {
-  "name": "angular-quickstart",
+  "name": "MuralidharanMe",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
