@@ -3,7 +3,7 @@
     <title>Murali</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/@angular/material@2.0.0-alpha.9-3/core/theming/prebuilt/indigo-pink.css" rel="stylesheet">
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="lib/shim.min.js"></script>
@@ -13,12 +13,11 @@
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
-        System.import('app').catch(function(err){ console.error(err); });
+        System.import('app').catch(function(err){ console.error.bind(console); });
     </script>
 </head>
 <!-- 3. Display the application -->
 <body>
-
     <my-app>
 
     </my-app>

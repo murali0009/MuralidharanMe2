@@ -20,18 +20,18 @@ gulp.task('copy:angular', function () {
     ]).pipe(gulp.dest('lib/@angular'))
 });
 
+gulp.task('copy:angular-material', function () {
+    return gulp.src([
+        'node_modules/@angular/material/**/*.js',
+        'node_modules/@angular/material/**/*.scss',
+        'node_modules/@angular/material/**/*.css',
+    ]).pipe(gulp.dest('@angular/material'))
+});
+
 gulp.task('copy:angular2inmemorywebapi', function () {
     return gulp.src([
         'node_modules/angular2-in-memory-web-api/**/*.js',
     ]).pipe(gulp.dest('lib/angular2-in-memory-web-api'))
-});
-
-gulp.task('copy:angular-material', function () {
-    return gulp.src([
-        'node_modules/@angular2-material/**/*.js',
-        'node_modules/@angular2-material/**/*.umd.js',
-        'node_modules/@angular2-material/**/*.css'
-    ]).pipe(gulp.dest('lib/@angular2-material'))
 });
 
 gulp.task('copy:rxjs', function () {
@@ -40,4 +40,4 @@ gulp.task('copy:rxjs', function () {
     ]).pipe(gulp.dest('lib/rxjs'))
 });
 
-gulp.task('default', ['copy:angular','copy:rxjs', 'copy:angular2inmemorywebapi', 'copy:angular-material','copy:libs']);
+gulp.task('default', ['copy:angular','copy:angular-material','copy:rxjs', 'copy:angular2inmemorywebapi','copy:libs']);

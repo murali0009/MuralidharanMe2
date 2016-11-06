@@ -4,9 +4,11 @@
 import { Component } from '@angular/core';
 import { Card } from '@angular2-material/card';
 
+
 @Component({
     selector: 'my-app',
-    template: `<h1>MyApp</h1>`
+    templateUrl: `./app/app.component.html`
 })
+
 
 export class AppComponent { }
