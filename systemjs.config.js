@@ -1,3 +1,4 @@
+
 /**
  * System configuration for Angular samples
  * Adjust as necessary for your application needs.
@@ -25,6 +26,7 @@
             // other libraries
             'rxjs':                      'npm:rxjs',
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+            'angular2-fontawesome': 'npm:angular2-fontawesome',
 
         },
         // packages tells the System loader how to load when no filename and/or no extension
@@ -43,7 +45,8 @@
             '@angular/material': {
                 format: 'cjs',
                 main: 'material.umd.js'
-            }
+            },
+            'angular2-fontawesome': { defaultExtension: 'js' }
         }
     });
 })(this);

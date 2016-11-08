@@ -40,4 +40,11 @@ gulp.task('copy:rxjs', function () {
     ]).pipe(gulp.dest('lib/rxjs'))
 });
 
-gulp.task('default', ['copy:angular','copy:angular-material','copy:rxjs', 'copy:angular2inmemorywebapi','copy:libs']);
+gulp.task('copy:fontawesome', function () {
+    return gulp.src([
+        'node_modules/angular2-fontawesome/**/*.js',
+    ]).pipe(gulp.dest('lib/angular2-fontawesome'))
+});
+
+
+gulp.task('default', ['copy:angular','copy:angular-material','copy:rxjs', 'copy:fontawesome', 'copy:angular2inmemorywebapi','copy:libs']);
