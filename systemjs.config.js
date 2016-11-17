@@ -22,12 +22,12 @@
             '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
             '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-
+            'ng2-bootstrap': 'npm:ng2-bootstrap/ng2-bootstrap.umd.js',
             // other libraries
             'rxjs':                      'npm:rxjs',
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
             'angular2-fontawesome': 'npm:angular2-fontawesome',
-
+            'moment': 'npm:ng2-bootstrap/moment.min.js',
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
